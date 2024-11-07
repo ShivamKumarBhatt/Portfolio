@@ -1,130 +1,59 @@
-/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-/* Navigation Bar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: #1f1f1f;
-    color: #fff;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.navbar .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.navbar .nav-links {
-    list-style: none;
-}
-
-.navbar .nav-links li {
-    display: inline;
-    margin: 0 15px;
-}
-
-.navbar .nav-links a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.navbar .nav-links a:hover {
-    color: #ff6347; /* Professional color */
-}
-
-/* Sections */
-.section {
-    padding: 60px 20px;
-    background: #f4f4f4;
-    border-bottom: 1px solid #ddd;
-}
-
-.section:nth-child(even) {
-    background: #fff;
-}
-
-.section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+header {
     text-align: center;
 }
 
-.section ul {
-    list-style: none;
+h1 {
+    font-size: 2.2em;
+}
+
+h2 {
+    border-bottom: 2px solid #666;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+ul {
+    list-style-type: none;
     padding: 0;
 }
 
-.section ul li {
+.social-links a {
+    text-decoration: none;
+    color: #0073b1;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styles */
+section {
     margin-bottom: 20px;
-    line-height: 1.5;
 }
 
-/* Home Section */
-.home-section {
-    padding: 100px 20px;
-    text-align: center;
-    background: #ff6347;
-    color: #fff;
+.education-item, .experience-item, .project-item, .extra-item {
+    margin-bottom: 15px;
 }
 
-.home-section h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+.education-item h3, .experience-item h3, .project-item h3, .extra-item h3 {
+    margin: 0;
+    font-size: 1.2em;
 }
 
-.home-section p {
-    font-size: 1.2rem;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #1f1f1f;
-    color: #fff;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .navbar .nav-links {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar .nav-links li {
-        margin: 10px 0;
-    }
-
-    .section {
-        padding: 40px 10px;
-    }
-
-    .home-section {
-        padding: 60px 10px;
-    }
-
-    .home-section h1 {
-        font-size: 2rem;
-    }
-
-    .home-section p {
-        font-size: 1rem;
-    }
+.project-item p, .experience-item p, .extra-item p {
+    font-size: 0.9em;
 }
